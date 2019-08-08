@@ -241,9 +241,19 @@ $(function(){
                 }).join("");
                 $(".warestak").append(warestak)
                 $(".wares").append(warestext)
+                $(".wares").eq(0).addClass("waresget")
+
+                $(".title-nav").click(function () { 
+                    $(".wares").removeClass("waresget");
+                    var res = $(this).index();
+                    $(".wares").eq(res).addClass("waresget");
+                });
             }
         })
+    }
+    wares()
 
+    let waresa = () =>{
         $.ajax({
             type: "post",
             url: "/wangyikaola/server/liebiao/waresaget.php",
@@ -272,11 +282,12 @@ $(function(){
                 }).join("");
                 $(".warestak").append(warestak)
                 $(".wares").append(warestext)
-                $(".wares").eq(0).addClass("waresget")
+                
             }
         })
     }
-    wares()
+    waresa()
+    
 
 
     //创建底部

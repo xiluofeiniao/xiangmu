@@ -44,4 +44,13 @@ $(function(){
     let regUsername = /^[A-Za-z]{6,8}$/;
     let regPhone = /^1[3-9]\d{9}$/; 
     let regPassword = /^[a-zA-Z0-9]{6,16}$/;
+
+    let oPostusername = $("#postusername");
+    oPostusername.blur(function (e) { 
+        let nametext = $.trim($(this).val());
+        if(nametext.length == 0){
+            $('.inputtext').html("内容不能为空!")
+            
+        }
+    });
 })

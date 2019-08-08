@@ -315,7 +315,12 @@ body{
 }
 
 .box::after{
-    
+    content: "";
+    height: 0;
+    display: block;
+    overflow: hidden;
+    clear: both;
+    visibility: hidden;
 }
 
 .title{
@@ -379,10 +384,10 @@ body{
     font-weight: bold;
 }
 
-.warestak{
+/* .warestak{
     position: relative;
     height: 100%;
-}
+} */
 
 .wares{
     width: 1090px;
