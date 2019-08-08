@@ -1,0 +1,732 @@
+body{
+    background: #eee;
+}
+
+*{padding: 0; margin: 0; list-style: none; text-decoration: none;}
+
+#id{
+    width: 100%;
+    height: 100%;
+}
+
+.top-nav{
+    width: 100%;
+    height: 30px;
+    background: #000000;
+}
+
+.top-nav-content{
+    width: 1090px;
+    height: 30px;
+    margin: auto;
+}
+
+.top-nav-left{
+    float: left;
+}
+
+.top-nav-left span,
+.login,
+.post{
+    font-size: 13px;
+    float: left;
+    line-height: 30px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.top-nav-right{
+    float: right;
+}
+
+.nav-right-li,
+.nav-right-lia{
+    float: left;
+    font-size: 13px;
+    line-height: 30px;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+}
+
+.nav-right-a{
+    color: #fff;
+    position: relative;
+}
+
+.right-down{
+    width: 100px;
+    border: 1px solid #ccc;
+    display: none;
+    background: #fff;
+    position: absolute;
+}
+
+.li-down a{
+    color: #000;
+}
+
+.li-down a:hover{
+    color: red;
+}
+
+.nav-right-li:hover .right-down{
+    display: block;
+}
+
+.nav-right-li:hover{
+    background: #fff;
+}
+
+.nav-right-li:hover .nav-right-a{
+    color: red;
+}
+
+/* .................................... */
+
+.top-logo{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+}
+
+.logo-center{
+    width: 1090px;
+    height: 100px;
+    margin: auto;
+}
+
+.logo{
+    width: 210px;
+    height: 100px; 
+    background: url(../img/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.search{
+    float: left;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+.search-text{
+    width: 500px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 30px;
+}
+
+.search input{
+    outline: none;
+    width: 430px;
+    height: 38px;
+    float: left;
+    margin-left: 15px;
+    border: none;
+}
+
+.search-img{
+    float: right;
+    background: red;
+    border-radius: 30px;
+    width: 50px;
+    height: 40px;
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.shopping{
+    width: 110px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 30px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 25px;
+    float: right;
+}
+
+/* ...................................... */
+
+.nav{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+}
+
+.nav-center{
+    width: 1090px;
+    height: 40px;
+    margin: auto;
+}
+
+.nav-left{
+    width: 165px;
+    height: 40px;
+    background: linear-gradient(90deg,red,#ff3264);
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    position: relative;
+}
+
+.nav-list{
+    font-size: 15px;
+    color: #fff;
+}
+
+.nav-box{
+    position: relative;
+    display: none;
+    z-index: 10;
+}
+
+.nav-left:hover .nav-box{
+    display: block;
+}
+
+.nav-list-text{
+    width: 165px;
+    height: 40px;
+    background: linear-gradient(90deg,red,#ff3264);
+    text-align: center;
+    line-height: 40px;
+    border-top: .1px solid #ddd;
+}
+
+.list-text{
+    font-size: 15px;
+    color: #fff;
+}
+
+.nav-nav{
+    width: 920px;
+    height: 440px;
+    background: #fff;
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    left: 165px;
+    display: none;
+}
+
+.nav-list-text:hover .nav-nav{
+    display: block;
+}
+
+.nav-list-text:hover{
+    background: #fff;
+}
+
+.nav-list-text:hover .list-text{
+    color: red;
+}
+
+.nav-nav-left{
+    width: 680px;
+    height: 440px;
+    float: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftTxt{
+    width: 300px;
+    float: left;
+    text-align: left;
+}
+
+.leftTxt h3{
+    border-bottom: 1px solid #ccc;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    display: block;
+}
+
+.leftTxt li{
+    float: left;
+    font-size: 13px;
+    margin-right: 20px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.nav-nav-right{
+    width: 240px;
+    height: 440px;
+    background: #eee;
+    float: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.right-img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+.right-img img{
+    width: 100px;
+    height: 100px;
+}
+
+.right-imga img{
+    width: 230px;
+    margin-top: 10px;
+}
+
+.nav-right{
+    float: left;
+    margin-left: 50px;
+}
+
+.nav-right li{
+    float: left;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.nav-right li a{
+    color: #000;
+}
+
+.nav-right li a:hover{
+    color: red;
+}
+
+/* ............................................... */
+
+.box{
+    width: 100%;
+    height: 100%;
+}
+
+.box::after{
+    
+}
+
+.title{
+    width: 1090px;
+    height: 30px;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 28px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.wares-nav{
+    width: 1100px;
+    height: 50px;
+    margin: auto;
+    background: #fff;
+    border-right: 1px solid #ccc;
+}
+
+.wares-nav li{
+    float: left;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-right: none;
+    box-sizing: border-box;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wares-nav li a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.colorbox{
+    background: red;
+    color: #fff;
+}
+
+.color{
+    color: #fff !important;
+}
+
+.wares-nav span{
+    font-size: 12px;
+}
+
+.wares-nav p{
+    text-align: center;
+}
+
+.p2{
+    color: red;
+    font-weight: bold;
+}
+
+.warestak{
+    position: relative;
+    height: 100%;
+}
+
+.wares{
+    width: 1090px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.waresget{
+    display: block;
+}
+
+.wares-box{
+    width: 260px;
+    height: 400px;
+    background: #fff;
+    margin-top: 10px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.wares-img{
+    width: 260px;
+    height: 260px;
+    float: left;
+    position: relative;
+    /* background: blue; */
+}
+
+.imga{
+    width: 260px;
+    height: 260px;
+    position: absolute;
+}
+
+.imgb{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.wares-txt{
+    color: #000;
+    float: left;
+    width: 260px;
+    height: 50px;
+}
+
+.wares-txt h4{
+    width: 240px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.wares-txt p{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.pricea{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    margin-left: 10px;
+    float: left;
+}
+
+.priceb{
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #999;
+    margin-left: 5px;
+    float: left;
+    margin-top: 8px;
+}
+
+.pricec,
+.priced{
+    width: 35px;
+    height: 20px;
+    border: 1px solid red;
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    float: left;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.buy{
+    width: 230px;
+    height: 30px;
+    background: red;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+/* ............................................... */
+
+.recommend{
+    width: 1090px;
+    height: 445px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.nav-title{
+    width: 1090px;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+
+.nav-title h3{
+    font-size: 25px;
+    float: left;
+}
+
+.nav-title p{
+    float: left;
+    color: #666;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.recommend-nav{
+    width: 1090px;
+    height: 385px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommend-text{
+    width: 260px;
+    height: 385px;
+}
+
+.text-img{
+    width: 260px;
+    height: 260px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.text-img img{
+    width: 180px;
+    height: 180px;
+}
+
+.text-p{
+    width: 260px;
+    height: 125px;
+    float: left;
+    /* background: yellow; */
+}
+
+.text-p h4{
+    margin-top: 10px;
+}
+
+.text-p .p1{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    float: left;
+    margin-top: 5px;
+}
+
+.text-p .p2{
+    font-size: 12px;
+    float: left;
+    color: #999;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+.text-p a{
+    font-size: 13px;
+    color: #999;
+    float: right;
+    margin-top: 12px;
+}
+
+/* ........................................... */
+
+.pledge{
+    width: 100%;
+    height: 410px;
+    background: #fff;
+}
+
+.pledge-center{
+    width: 1090px;
+    height: 410px;
+    margin: auto;
+    /* background: yellow; */
+}
+
+.Servicea{
+    width: 1090px;
+    height: 145px;
+    /* background: pink; */
+    float: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.Service-nav{
+    width: 272.5px;
+    height: 50px;
+    float: left;
+    /* background: greenyellow; */
+    margin-top: 45px;
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+
+.Service-nav b{
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+}
+
+.Service-nav p{
+    float: left;
+    margin-left: 10px;
+}
+
+.Service-nav h3{
+    float: left;
+    margin-left: 10px;
+}
+
+.Serviceb{
+    width: 1090px;
+    height: 265px;
+    /* background: blue; */
+    float: left;
+}
+
+.Serviceb-left{
+    width: 260px;
+    height: 265px;
+    float: left;
+    /* background: gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Serviceb-center{
+    width: 660px;
+    height: 265px;
+    /* background: red; */
+    float: left;
+}
+
+.Serviceb-center ul{
+    float: left;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.Serviceb-center ul h3{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.Serviceb-center ul li a{
+    font-size: 13px;
+    color: #000;
+}
+
+.Serviceb-center ul li{
+    margin-bottom: 10px;
+}
+
+.Serviceb-right{
+    width: 170px;
+    height: 265px;
+    /* background: greenyellow; */
+    float: left;
+}
+
+.Serviceb-right img{
+    margin-top: 50px;
+    float: left;
+}
+
+.Serviceb-right p{
+    float: left;
+    font-size: 13px;
+    margin-left: 7px;
+}
+
+/* ................................................ */
+
+.foot{
+    width: 100%;
+    height: 150px;
+    background: #333333;
+    position: relative;
+}
+
+.foot-center{
+    width: 1090px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.foot-center p{
+    font-size: 12px;
+    color: #fff;
+    line-height: 25px;
+}
+
+.foot-center img{
+    width: 83px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}

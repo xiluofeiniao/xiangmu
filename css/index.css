@@ -1,0 +1,1047 @@
+body{
+    background: #eee;
+}
+
+*{padding: 0; margin: 0; list-style: none; text-decoration: none;}
+
+#id{
+    width: 100%;
+    height: 100%;
+}
+
+.top-nav{
+    width: 100%;
+    height: 30px;
+    background: #000000;
+}
+
+.top-nav-content{
+    width: 1090px;
+    height: 30px;
+    margin: auto;
+}
+
+.top-nav-left{
+    float: left;
+}
+
+.top-nav-left span,
+.login,
+.post{
+    font-size: 13px;
+    float: left;
+    line-height: 30px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.top-nav-right{
+    float: right;
+}
+
+.nav-right-li,
+.nav-right-lia{
+    float: left;
+    font-size: 13px;
+    line-height: 30px;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+}
+
+.nav-right-a{
+    color: #fff;
+    position: relative;
+}
+
+.right-down{
+    width: 100px;
+    border: 1px solid #ccc;
+    display: none;
+    background: #fff;
+    position: absolute;
+}
+
+.li-down a{
+    color: #000;
+}
+
+.li-down a:hover{
+    color: red;
+}
+
+.nav-right-li:hover .right-down{
+    display: block;
+}
+
+.nav-right-li:hover{
+    background: #fff;
+}
+
+.nav-right-li:hover .nav-right-a{
+    color: red;
+}
+
+/* .................................... */
+
+.top-logo{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+}
+
+.logo-center{
+    width: 1090px;
+    height: 100px;
+    margin: auto;
+}
+
+.logo{
+    width: 210px;
+    height: 100px; 
+    background: url(../img/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.search{
+    float: left;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+.search-text{
+    width: 500px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 30px;
+}
+
+.search input{
+    outline: none;
+    width: 430px;
+    height: 38px;
+    float: left;
+    margin-left: 15px;
+    border: none;
+}
+
+.search-img{
+    float: right;
+    background: red;
+    border-radius: 30px;
+    width: 50px;
+    height: 40px;
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.shopping{
+    width: 110px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 30px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 25px;
+    float: right;
+}
+
+/* ...................................... */
+
+.nav{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+}
+
+.nav-center{
+    width: 1090px;
+    height: 40px;
+    margin: auto;
+}
+
+.nav-left{
+    width: 165px;
+    height: 40px;
+    background: linear-gradient(90deg,red,#ff3264);
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    position: relative;
+}
+
+.nav-list{
+    font-size: 15px;
+    color: #fff;
+}
+
+.nav-box{
+    position: relative;
+    z-index: 9999;
+}
+
+.nav-list-text{
+    width: 165px;
+    height: 40px;
+    background: linear-gradient(90deg,red,#ff3264);
+    text-align: center;
+    line-height: 40px;
+    border-top: .1px solid #ddd;
+}
+
+.list-text{
+    font-size: 15px;
+    color: #fff;
+}
+
+.nav-nav{
+    width: 920px;
+    height: 440px;
+    background: #fff;
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    left: 165px;
+    display: none;
+}
+
+.nav-list-text:hover .nav-nav{
+    display: block;
+}
+
+.nav-list-text:hover{
+    background: #fff;
+}
+
+.nav-list-text:hover .list-text{
+    color: red;
+}
+
+.nav-nav-left{
+    width: 680px;
+    height: 440px;
+    float: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftTxt{
+    width: 300px;
+    float: left;
+    text-align: left;
+}
+
+.leftTxt h3{
+    border-bottom: 1px solid #ccc;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    display: block;
+}
+
+.leftTxt li{
+    float: left;
+    font-size: 13px;
+    margin-right: 20px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.nav-nav-right{
+    width: 240px;
+    height: 440px;
+    background: #eee;
+    float: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.right-img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+.right-img img{
+    width: 100px;
+    height: 100px;
+}
+
+.right-imga img{
+    width: 230px;
+    margin-top: 10px;
+}
+
+.nav-right{
+    float: left;
+    margin-left: 50px;
+}
+
+.nav-right li{
+    float: left;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.nav-right li a{
+    color: #000;
+}
+
+.nav-right li a:hover{
+    color: red;
+}
+
+/* ......................................... */
+
+.banner{
+    width: 100%;
+    height: 505px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img{
+    width: 700%;
+    height: 505px;
+    float: left;
+    position: absolute;
+}
+
+.img>img{
+    width: 14.2857%;
+    height: 100%;
+    float: left;
+}
+
+
+.banner-aout{
+    position: absolute;
+    width: 900px;
+    height: 100px;
+    left: 175px;
+    top: 200px;
+    z-index: 1;
+}
+
+.prev,
+.next{
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff;
+    width: 60px;
+    height: 100px;
+    line-height: 100px;
+    background: rgba(0, 0, 0, 0.3);
+    font-weight: normal;
+}
+
+.prev{
+    float: left;
+}
+
+.next{
+    float: right;
+}
+
+.banner-round{
+    width: 500px;
+    height: 20px;
+    position: absolute;
+    top: 450px;
+    left: 250px;
+    z-index: 1;
+}
+
+.round{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+
+.banner-text{
+    width: 100%;
+    height: 64px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+}
+
+.banner-text-content{
+    width: 1090px;
+    height: 64px;
+    line-height: 64px;
+    margin: auto;
+}
+
+.banner-text-content a{
+    color: #fff;
+    font-size: 16px;
+    margin-right: 50px;
+}
+
+/* ......................................... */
+
+.banner-nav{
+    width: 100%;
+    height: 332px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-nav-content{
+    width: 1090px;
+    height: 320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ........................................... */
+
+.brand{
+    width: 1090px;
+    height: 430px;
+    margin: auto;
+    margin-bottom: 30px;
+    /* background: yellow; */
+}
+
+.brand-nav{
+    width: 1090px;
+    height: 75px;
+    /* background: pink; */
+    line-height: 75px;
+    float: left;
+    border-top: 1px solid #eee;
+}
+
+.brand-nav h3{
+    float: left;
+    font-size: 20px;
+}
+
+.brand-nav p{
+    font-size: 15px;
+    color: #999;
+    margin-left: 20px;
+    margin-top: 3px;
+    float: left;
+}
+
+.brand-banner{
+    width: 1090px;
+    height: 355px;
+    float: left;
+    position: relative;
+    background: #fff;
+}
+
+.brand-auot{
+    width: 220px;
+    height: 355px;
+    background: red;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.brand-auot-img{
+    width: 220px;
+    height: 220px;
+    background-image: url(../img/aout01.jpg);
+    background-size: 100%;
+}
+
+.brand-prev{
+    float: left;
+    font-size: 20px;
+    width: 30px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 50px;
+    color: #fff;
+    margin-top: 80px;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.brand-next{
+    float: right;
+    font-size: 20px;
+    width: 30px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 50px;
+    color: #fff;
+    margin-top: 80px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.brand-text{
+    width: 220px;
+    height: 135px;
+    background: #555;
+    text-align: center;
+}
+
+.brand-text h3{
+    color: #fff;
+    padding-top: 35px;
+}
+
+.brand-text p{
+    font-size: 14px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.brand-shop{
+    width: 870px;
+    height: 355px;
+    /* background: green; */
+    float: right;
+}
+
+.brand-shop-nav{
+    width: 217.5px;
+    height: 177.5px;
+    /* background: yellow; */
+    float: left;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.shop-nav-a{
+    width: 217.5px;
+    height: 177.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    /* opacity: 0; */
+}
+
+.shop-nav-a img,
+.shop-nav-a b{
+    margin-top: 10px;
+}
+
+.shop-nav-b{
+    width: 217.5px;
+    height: 177.5px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition-duration: 0.7s;
+}
+
+.brand-shop-nav:hover .shop-nav-b{
+    
+    opacity: 1;
+}
+
+.follow{
+    margin-right: 150px;
+    font-size: 12px;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #666;
+    color: #666;;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.shop-nav-b img{
+    width: 70px;
+    height: 70px;
+}
+
+.shop-nav-b p{
+    color: #666;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.in-shop{
+    color: red;
+    margin-top: 5px;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    line-height: 35px;
+    text-align: center;
+    border: 2px solid red;
+    font-size: 15px;
+}
+
+/* ........................................... */
+
+.hot{
+    width: 1090px;
+    height: 615px;
+    margin: auto;
+    /* background: yellow; */
+}
+
+.hot-nav{
+    width: 1090px;
+    height: 75px;
+    /* background: pink; */
+    line-height: 75px;
+    float: left;
+    border-top: 1px solid #eee;
+}
+
+.hot-nav h3{
+    font-size: 20px;
+    float: left;
+}
+
+.hot-nav ul{
+    float: left;
+}
+
+.hot-nav ul li{
+    font-size: 15px;
+    color: #999;
+    margin-left: 20px;
+    margin-top: 3px;
+    float: left;
+}
+
+.hot-shop{
+    width: 1090px;
+    height: 541px;
+    float: left;
+    background: #fff;
+}
+
+.shop-left{
+    width: 330px;
+    height: 541px;
+    float: left;
+    position: relative;
+    background: red;
+}
+
+.shop-left img{
+    position: absolute;
+}
+
+.shop-left ul{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 400px;
+}
+
+.shop-left ul li{
+    float: left;
+    font-size: 13px;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background: #eee;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.shop-center{
+    width: 550px;
+    height: 540px;
+    /* background: blue; */
+    float: left;
+}
+
+.shop-center-nav{
+    width: 275px;
+    height: 270px;
+    border: 1px solid #ccc;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-center-nav h3{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.shop-center-nav p{
+    margin-top: 10px;
+}
+
+.shop-center-nav img{
+    margin-top: 20px;
+}
+
+.shop-right{
+    width: 210px;
+    height: 540px;
+    /* background: blueviolet; */
+    float: left;
+    box-sizing: border-box;
+}
+
+.shop-right h3{
+    width: 210px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 10px;
+}
+
+.hot-sell{
+    width: 210px;
+    height: 120px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.hot-sell .imglt{
+    float: left;
+    width: 75px;
+    height: 120px;
+    /* background: yellow; */
+}
+
+.hot-sell .imglt img{
+    width: 100%;
+    height: 65%;
+    padding-top: 20px;
+    float: left;
+}
+
+.hot-sell p{
+    /* float: left; */
+    font-size: 12px;
+    margin-left: 75px;
+    margin-top: 20px;
+    display: block;
+}
+
+.hot-price{
+    float: left;
+    /* margin-left: 5px; */
+    margin-top: 5px;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+.cost-price{
+    margin-left: 20px;
+    margin-top: 13px;
+    float: left;
+    font-size: 13px;
+    color: #999;
+}
+
+/* ........................................... */
+
+.hot-brand{
+    width: 1090px;
+    height: 220px;
+    margin: auto;
+    background: #fff;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.hot-brand h3{
+    width: 1090px;
+    height: 50px;
+    /* background: pink; */
+    line-height: 50px;
+    float: left;
+    padding-left: 20px;
+}
+
+.brand-name{
+    width: 1090px;
+    height: 170px;
+    /* background: pink; */
+    float: left;
+}
+
+.img-name{
+    width: 218px;
+    height: 170px;
+    float: left;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ................................................ */
+
+.recommend{
+    width: 1090px;
+    height: 445px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.nav-title{
+    width: 1090px;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+
+.nav-title h3{
+    font-size: 25px;
+    float: left;
+}
+
+.nav-title p{
+    float: left;
+    color: #666;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.recommend-nav{
+    width: 1090px;
+    height: 385px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommend-text{
+    width: 260px;
+    height: 385px;
+}
+
+.text-img{
+    width: 260px;
+    height: 260px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.text-img img{
+    width: 180px;
+    height: 180px;
+}
+
+.text-p{
+    width: 260px;
+    height: 125px;
+    float: left;
+    /* background: yellow; */
+}
+
+.text-p h4{
+    margin-top: 10px;
+}
+
+.text-p .p1{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    float: left;
+    margin-top: 5px;
+}
+
+.text-p .p2{
+    font-size: 12px;
+    float: left;
+    color: #999;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+.text-p a{
+    font-size: 13px;
+    color: #999;
+    float: right;
+    margin-top: 12px;
+}
+
+/* ........................................... */
+
+.pledge{
+    width: 100%;
+    height: 410px;
+    background: #fff;
+}
+
+.pledge-center{
+    width: 1090px;
+    height: 410px;
+    margin: auto;
+    /* background: yellow; */
+}
+
+.Servicea{
+    width: 1090px;
+    height: 145px;
+    /* background: pink; */
+    float: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.Service-nav{
+    width: 272.5px;
+    height: 50px;
+    float: left;
+    /* background: greenyellow; */
+    margin-top: 45px;
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+
+.Service-nav b{
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+}
+
+.Service-nav p{
+    float: left;
+    margin-left: 10px;
+}
+
+.Service-nav h3{
+    float: left;
+    margin-left: 10px;
+}
+
+.Serviceb{
+    width: 1090px;
+    height: 265px;
+    /* background: blue; */
+    float: left;
+}
+
+.Serviceb-left{
+    width: 260px;
+    height: 265px;
+    float: left;
+    /* background: gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Serviceb-center{
+    width: 660px;
+    height: 265px;
+    /* background: red; */
+    float: left;
+}
+
+.Serviceb-center ul{
+    float: left;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.Serviceb-center ul h3{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.Serviceb-center ul li a{
+    font-size: 13px;
+    color: #000;
+}
+
+.Serviceb-center ul li{
+    margin-bottom: 10px;
+}
+
+.Serviceb-right{
+    width: 170px;
+    height: 265px;
+    /* background: greenyellow; */
+    float: left;
+}
+
+.Serviceb-right img{
+    margin-top: 50px;
+    float: left;
+}
+
+.Serviceb-right p{
+    float: left;
+    font-size: 13px;
+    margin-left: 7px;
+}
+
+/* ................................................ */
+
+.foot{
+    width: 100%;
+    height: 150px;
+    background: #333333;
+}
+
+.foot-center{
+    width: 1090px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.foot-center p{
+    font-size: 12px;
+    color: #fff;
+    line-height: 25px;
+}
+
+.foot-center img{
+    width: 83px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+

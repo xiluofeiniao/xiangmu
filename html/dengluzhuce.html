@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登陆注册</title>
+    <link rel="stylesheet" href="../css/dengluzhuce.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/captcha.js"></script>
+    <script src="../js/dengluzhuce.js"></script>
+    
+    
+</head>
+<body>
+
+    <div id="box">
+        <div class="nav">
+            <div class="nav-center">
+                <div class="logo">
+                    <img src="http://haitao.nos.netease.com/70dee793-133d-4628-b374-b99e29aad157.png?imageView&thumbnail=210x0&quality=85&v=1" alt="">
+                </div>
+                <div class="nav-text">
+                    <img src="https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=504x0&quality=100&v=1" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="landing">
+            <div class="landing-center">
+                <img src="https://haitao.nos.netease.com/eaf0275f-15af-4873-87b6-7efa5fce7b59_400_203.png" alt="" class="landing-img">
+
+                <!-- 手机短信登陆 -->
+                <div class="logina">
+                    <div class="logina-nav">
+                        <a href="javascript:void(0)"><p class="phone-btn actvre">手机登陆</p></a>
+                        <a href="javascript:void(0)"><p class="mail-btn">邮箱登陆</p></a>
+                    </div>
+                    <div class="login-phone">
+                        <a href="javascript:void(0)" class="playpassword">使用密码验证登录</a>
+                        <div class="phone">
+                            <input type="text" placeholder="请输入手机号">
+                        </div>
+                        <div class="messge">
+                            <input type="text" placeholder="请输入短信验证码">
+                            <a href="javascript:void(0)">获取验证码</a>
+                        </div>
+                        <a href="" class="login-in">登陆</a>
+                        <p class="cookie-text">
+                            <input type="checkbox" class="cookie">
+                            <span>10天免登陆</span>
+                        </p>
+                        <a href="" class="question">遇到问题？</a>
+                        <p class="yingsi">登录即代表您已同意 <a href="">"隐私权相关政策"</a></p>
+                        <a href="javascript:void(0)" class="post">手机快捷注册</a>
+                    </div>
+                </div>
+
+                <!-- 手机密码登陆 -->
+                <div class="loginb going">
+                    <div class="loginb-nav going">
+                        <a href="javascript:void(0)"><p class="phone-btn actvre">手机登陆</p></a>
+                        <a href="javascript:void(0)"><p class="mail-btn">邮箱登陆</p></a>
+                    </div>
+                    <div class="login-password">
+                        <a href="javascript:void(0)" class="playphnoe">使用短信验证登录</a>
+                        <div class="phone-a">
+                            <input type="text" placeholder="请输入手机号">
+                        </div>
+                        <div class="password">
+                            <input type="text" placeholder="请输入密码">
+                        </div>
+                        <div class="codeimg">
+                            <input type="text" placeholder="请输入验证码">
+                            <canvas id="captcha"></canvas>
+                        </div>
+                        <a href="" class="password-login-in">登陆</a>
+                        <p class="password-cookie-text">
+                            <input type="checkbox" class="password-cookie">
+                            <span>10天免登陆</span>
+                        </p>
+                        <a href="" class="forget">忘记密码</a>
+                        <p class="password-yingsi">登录即代表您已同意 <a href="">"隐私权相关政策"</a></p>
+                        <a href="javascript:void(0)" class="post">手机快捷注册</a>
+                    </div>
+                </div>
+
+                <!-- 邮箱登陆 -->
+                <div class="loginc">
+                    <div class="loginb-nav">
+                        <a href="javascript:void(0)"><p class="phone-btn">手机登陆</p></a>
+                        <a href="javascript:void(0)"><p class="mail-btn actvre">邮箱登陆</p></a>
+                    </div>
+                    <div class="login-mail">
+                        <div class="mail">
+                            <input type="text" placeholder="网易邮箱账号">
+                        </div>
+                        <div class="mail-password">
+                            <input type="text" placeholder="密码">
+                        </div>
+                        <div class="mail-codeimg">
+                            <input type="text" placeholder="请输入验证码">
+                            <a href="javascript:void(0)"></a>
+                        </div>
+                        <a href="" class="mail-login-in">登陆</a>
+                        <p class="mail-cookie-text">
+                            <input type="checkbox" class="mail-cookie">
+                            <span>10天免登陆</span>
+                        </p>
+                        <a href="" class="forget">忘记密码</a>
+                        <p class="password-yingsi">登录即代表您已同意 <a href="">"隐私权相关政策"</a></p>
+                        <a href="javascript:void(0)" class="post">手机快捷注册</a>
+                    </div>
+                </div>
+            
+
+                <!-- 注册 -->
+                <div class="post-in">
+                    <div class="post-nav">
+                        <span>欢迎注册</span>
+                        <div class="post-land">
+                            <p>已有账号?</p>
+                            <a href="javascript:void(0)" class="post-one">去登陆</a>
+                        </div>
+                    </div>
+                    <div class="post-text">
+                        <div class="post-phone">
+                            <input type="text" placeholder="请输入手机号">
+                        </div>
+                        <div class="post-codeimg">
+                            <input type="text" placeholder="请输入验证码">
+                            <a href="javascript:void(0)"></a>
+                        </div>
+                        <div class="post-password">
+                            <input type="text" placeholder="请输入密码">
+                        </div>
+                        <a href="" class="post-login-in">注册</a>
+                        <p class="post-tq">
+                            <input type="checkbox" class="post-cookie">
+                            我同意《服务条款》和《网易考拉私隐政策》
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="foot-center">
+                <p>About NetEase - 公司简介 - 联系方法 - 友情链接 - 招聘信息 - 客户服务 - 隐私政策 - 网络营销 - 网易考拉</p>
+                <p>网络文化经营许可证：浙网文[2019]1372-138号 增值电信业务经营许可证：浙B2-20160288 自营经营者信息 （浙）网械平台备字[2018]第00007号</p>
+                <p><img src="http://haitao.nos.netease.com/f28aa8ee818a42bf832341f605eccefb.png" alt="">
+                    浙公网安备 33010802002216号 网易公司版权所有©1997-2019互联网药品信息服务资格证书编号（浙）-2017-0027 浙ICP备16011229号-6</p>
+                <p>
+                    <span><img src="http://haitao.nos.netease.com/86998579-754f-4f2c-b800-5dae6404a1f6.png" alt="" class="dimga"></span>
+                    <span><img src="http://haitao.nos.netease.com/d720d83b55a04b6f932ea845c673c5bf.png" alt="" class="dimgb"></span>
+                    <span><img src="http://haitao.nos.netease.com/d071c0de-5360-4dcb-915a-f9f9bb62a9d5.gif" alt="" class="dimgc"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

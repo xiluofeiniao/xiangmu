@@ -1,0 +1,143 @@
+[{
+    "title": "美妆专区",
+    "titlenav": ["热搜词：","面膜","口红","眼霜","精华","卸妆"],
+    "hotimg": "https://haitao.nosdn1.127.net/1FtzCbxfT2yHbhCqfORvT1811261546_330_542.jpg?imageView&thumbnail=330x0&quality=95",
+    "imgnav": ["精致护肤","人气面膜","大牌彩妆","防晒修护","迷人香氛","面部精华"],
+    "center": [{
+        "h3": "每日上新",
+        "cp": "扫遍全球美妆新货",
+        "imgcenter": "https://haitao.nos.netease.com/2bEI4TPTFTbcefQgssLIT1811261707_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    },{
+        "h3": "热销榜单",
+        "cp": "超人气护肤彩妆",
+        "imgcenter": "https://haitao.nosdn1.127.net/vAhTrMm6boBh0bW7oerMT1811261716_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    },{
+        "h3": "美妆N元任选",
+        "cp": "99元选6件起",
+        "imgcenter": "https://haitao.nosdn2.127.net/ybMv0y5zMFNBplpEnDKxa9qT1811261728_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    },{
+        "h3": "神价购爆款",
+        "cp": "好物剁手不停",
+        "imgcenter": "https://haitao.nos.netease.com/FsUTJMRvzDX3t9LoCM10T1811261734_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    }],
+    "leftnav": "最近热卖",
+    "left": [{
+        "ltimg": "https://haitao.nosdn1.127.net/66e319e1c9ce4f90adf23bc9ba830adc1543558616942jp3my3bp10280.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "unicharm 尤妮佳 Silcot省1/2化妆水化妆",
+        "hotprice": "¥59",
+        "costprice": "¥109"
+    },{
+        "ltimg": "https://haitao.nos.netease.com/1bf78db7836646ebac779c3d9819a06a1556249693364juxivwke10075.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "Papa recipe 春雨 蜂蜜补水保湿面膜 25克/片",
+        "hotprice": "¥88",
+        "costprice": "¥129"
+    },{
+        "ltimg": "https://haitao.nosdn2.127.net/5b7bbf42e1764784a050a83a3127d2d61552564629459jt8kw72810022.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "【当家爆款 温和氨基酸】Freeplus 芙丽芳",
+        "hotprice": "¥119",
+        "costprice": "¥165"
+    },{
+        "ltimg": "https://pop.nosdn.127.net/f2b8884f-9740-480e-9de0-e8a54fc6438f?imageView&thumbnail=75x0&quality=95",
+        "ltp": "【89元两盒】七夕好礼JMsolution肌司研蜂",
+        "hotprice": "¥69",
+        "costprice": "¥168"
+    }],
+    "hotbrand": ["https://haitao.nosdn2.127.net/1bk8ndmup45_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/1btbadu1946_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/ifxc1wa478_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn2.127.net/1c126l96j31_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn2.127.net/1btlvtbrr35_300_300.jpg?imageView&thumbnail=120x0&quality=95"]
+},{
+    "title": "母婴专区",
+    "titlenav": ["热搜词：","花王旗舰","家居出行","米粉","宝宝防晒"],
+    "hotimg": "https://haitao.nosdn1.127.net/PqSa1JgeRiGhlQcpKNu7T1811261632_330_542.jpg?imageView&thumbnail=330x0&quality=95",
+    "imgnav": ["大牌奶粉","纸尿裤","洗护喂养","营养辅食","孕妈专区","玩具图书"],
+    "center": [{
+        "h3": "辅食N元任选",
+        "cp": "最多99选9",
+        "imgcenter": "https://haitao.nosdn2.127.net/T20VtOhsFhH1xN09001_180_144T1811012015_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    },{
+        "h3": "用品N元任选",
+        "cp": "最多99选8",
+        "imgcenter": "https://haitao.nos.netease.com/3TdWdM7MogTNBAoi002_180_144T1811012016_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    },{
+        "h3": "童装童鞋馆",
+        "cp": "最高188减100",
+        "imgcenter": "https://haitao.nosdn1.127.net/Mtv3rnGRl000i8aN003_180_144T1811012016_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    },{
+        "h3": "玩具N元任选",
+        "cp": "低至98任选3",
+        "imgcenter": "https://haitao.nosdn2.127.net/sQUvy2TElZVHkkcE004_180_144T1811012017_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    }],
+    "leftnav": "最近热卖",
+    "left": [{
+        "ltimg": "https://haitao.nosdn2.127.net/j14z5qbw85_800_800.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "2瓶装【品牌直采】BIO ISLAND 佰澳",
+        "hotprice": "¥195",
+        "costprice": "¥308"
+    },{
+        "ltimg": "https://haitao.nos.netease.com/1ad4c0c56ff748c099e42e7f27bdad9b1532948160042jk85r6e010681.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "Gerber 嘉宝 DHA益生菌米粉 一段 227克",
+        "hotprice": "¥52",
+        "costprice": "¥66"
+    },{
+        "ltimg": "https://haitao.nos.netease.com/417a1cc66ad841c5913234306812b8391546572401941jqhh9ykb10001.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "【品牌直采】Aveeno艾惟诺婴儿天然燕麦",
+        "hotprice": "¥55",
+        "costprice": "¥79"
+    },{
+        "ltimg": "https://haitao.nosdn2.127.net/onlineidgxm5o710231.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "【每日一滴】Baby Ddrops 婴儿维生素D3",
+        "hotprice": "¥216",
+        "costprice": "¥368"
+    }],
+    "hotbrand": ["https://haitao.nosdn1.127.net/iqt7jad642_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/iey1eyns76_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn2.127.net/iiq194c491_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/1buq5o77461_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/j1ls2t8t6_300_300.jpg?imageView&thumbnail=120x0&quality=95"]
+},{
+    "title": "营养保健",
+    "titlenav": ["热搜词：","女性健康","男士必备","关爱爸妈","滋补养生","运动营养","日常护理"],
+    "hotimg": "https://haitao.nos.netease.com/TzXuaov9A40ftQc1OX3uTxCgnLT1811261627_330_542.jpg?imageView&thumbnail=330x0&quality=95",
+    "imgnav": ["女性健康","男士必备","关爱爸妈","滋补养生","运动营养","日常护理"],
+    "center": [{
+        "h3": "传统滋补",
+        "cp": "全场满399减150起",
+        "imgcenter": "https://haitao.nosdn1.127.net/e6sEmPOxZJCv6y3aS2lnT1811261629_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    },{
+        "h3": "职场营养",
+        "cp": "护眼片低至88",
+        "imgcenter": "https://haitao.nosdn1.127.net/gyaTAiee2adxbLQ4HTsFT1811261629_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    },{
+        "h3": "运动营养专场",
+        "cp": "美瑞克斯赛霸增肌粉低至288",
+        "imgcenter": "https://haitao.nosdn2.127.net/EO507rnpSIX4rF6caW4LT1811261630_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    },{
+        "h3": "考拉海外分站",
+        "cp": "参天眼药水香港直邮",
+        "imgcenter": "https://haitao.nosdn1.127.net/wR9usLo17obd1V2A3sIyT1811261631_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    }],
+    "leftnav": "最近热卖",
+    "left": [{
+        "ltimg": "https://haitao.nos-hz.163yun.com/a8a982c2-1c4b-43ef-b52b-5cfada309198.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "Swisse 钙&VD片  150片/罐【青春有你同款】",
+        "hotprice": "¥99",
+        "costprice": "¥196"
+    },{
+        "ltimg": "https://haitao.nos-hz.163yun.com/c0312b41-05b6-4c06-8a40-f4e126e25785.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "Swisse 钙&VD片 150片/罐 2罐【有效促吸收 补钙方程式】",
+        "hotprice": "¥164",
+        "costprice": "¥378"
+    },{
+        "ltimg": "http://haitao.nosdn1.127.net/6b8d3ab770ce4ae9bcde7cf78cd96fed1534418669966jkwh9ax810543.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "Swisse 葡萄籽片 180片/瓶 高浓度原花青素【嫩白淡斑去皱】",
+        "hotprice": "¥125",
+        "costprice": "¥278"
+    },{
+        "ltimg": "https://haitao.nosdn1.127.net/2b2aa2978c814d85b2c25abb52f06cc41559704485462jwins32010464.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "Swisse 高浓度蔓越莓 30粒/瓶 2瓶【泌尿健康 保卫助手】",
+        "hotprice": "¥142",
+        "costprice": "¥319"
+    }],
+    "hotbrand": ["https://haitao.nos.netease.com/ifpbik8q40_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/1bflhppm867_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn2.127.net/igxezzf398_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nos.netease.com/1dd08c1oj51_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn2.127.net/1bidsesq59_300_300.jpg?imageView&thumbnail=120x0&quality=95"]
+}]
+
+
+
+
+
+
+
