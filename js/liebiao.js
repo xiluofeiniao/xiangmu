@@ -218,6 +218,7 @@ $(function(){
             url: "/wangyikaola/server/liebiao/weresget.php",
             dataType: "json",
             success: function(response){
+                debugger;
                 let warestak = `<div class="wares"></div>`         
                 let warestext = response.data.map(ele =>{
                     return `<div class="wares-box">

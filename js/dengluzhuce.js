@@ -36,21 +36,143 @@ $(function(){
         $(".post-in").removeClass("going");   
     });
 
-    let imgCodeText = "";
-    (new Captcha({ fontSize: 90 })).draw(document.querySelector('#captcha'), r => {
-        imgCodeText = r;
-    });
-
-    let regUsername = /^[A-Za-z]{6,8}$/;
+    
     let regPhone = /^1[3-9]\d{9}$/; 
     let regPassword = /^[a-zA-Z0-9]{6,16}$/;
 
+    let nametext = "";
+    let wordtext = "";
+    let imgtext = "";
+
     let oPostusername = $("#postusername");
+    let oPostword = $("#postword");
+    let oImgcode = $("#imgcode");
+
+    let imgCodeText = "";
+    (new Captcha({ fontSize: 90 })).draw(document.querySelector('#captcha'), r => {
+        imgCodeText = r;
+        oImgcode.trigger("blur");
+    });
+
+    //注册.................................................
+    //用户名验证
     oPostusername.blur(function (e) { 
-        let nametext = $.trim($(this).val());
-        if(nametext.length == 0){
-            $('.inputtext').html("内容不能为空!")
-            
+        let text = $.trim($(this).val());
+        nametext = text;
+        if(text.length == 0){
+            $('.inputtext').html("手机号不能为空!");
+        }else if(!regPhone.test(text)){
+            $('.inputtext').html("手机号不符合规范!");
+        }else{
+            $('.inputtext').html("");
         }
     });
+
+    //密码验证
+    oPostword.blur(function (e) { 
+        let text = $.trim($(this).val());
+        wordtext = text;
+        if(text.length == 0){
+            $('.inputtext').html("密码不能为空!");
+        }else if(!regPassword.test(text)){
+            $('.inputtext').html("密码不符合规范!");
+        }else{
+            $('.inputtext').html("");
+        }
+    });
+
+    //验证码验证
+        oImgcode.blur(function (e) { 
+        let text = $.trim($(this).val());
+        imgtext = text;
+            if(text.length == 0){
+                $('.inputtext').html("验证码不能为空!");
+            }else if(imgCodeText.toLowerCase() != text.toLowerCase()){
+                $('.inputtext').html("验证码不正确!");
+            }else{
+                $('.inputtext').html("");
+            }
+        });
+    
+    //点击注册
+    $("#postbtn").click(function(){
+        let isbox = $("#cookiebox").is(":checked")
+        if(!isbox){
+            alert("请阅读和同意《服务条款》和《网易考拉私隐政策》");
+            return
+        }
+
+
+        if(nametext.length != 0 && 
+           wordtext.length != 0 && 
+           imgtext.length != 0 && 
+           $('.inputtext').text().length == 0){
+               
+                $.ajax({
+                    type: "post",
+                    url: "http://127.0.0.1/wangyikaola/server/dengluzhuce/post.php",
+                    dataType: "json",
+                    data: `username=${nametext}&password=${wordtext}`,
+                    success: function (response) {
+                                        
+                        if (response.status == "success") {
+                            alert(response.msg);
+  
+                            window.location.href = "http://127.0.0.1/wangyikaola/html/dengluzhuce.html"
+                        } else {
+                            alert(response.msg);
+                        }    
+                    }
+                });
+        }
+    })
+
+
+    //登陆................................................
+    // let nametxt = "";
+    // let wordtxt = "";
+
+    // let oLandname = $("#landname");
+    // oLandname.blur(function (e) { 
+    //     let text = $.trim($(this).val());
+    //     // nametxt = text;
+    //     if(text.length == 0){
+    //         $('.inputtxt').html("手机号不能为空!");
+    //     }else if(!regPhone.test(text)){
+    //         $('.inputtxt').html("手机号不符合规范!");
+    //     }else{
+    //         $('.inputtxt').html("");
+    //     }
+    // });
+
+    // let oLandword = $("#landword");
+    // oLandword.blur(function (e) { 
+    //     let text = $.trim($(this).val());
+    //     // wordtxt = text;
+    //     if(text.length == 0){
+    //         $('.inputtxt').html("密码不能为空!");
+    //     }else if(!regPassword.test(text)){
+    //         $('.inputtxt').html("密码不符合规范!");
+    //     }else{
+    //         $('.inputtxt').html("");
+    //     }
+    // });
+
+    //点击登陆
+    $(".password-login-in").click(function(){
+
+        let nametxt = "13112031527";
+        let wordtxt = "123456";
+        
+        $.ajax({
+            type: "post",
+            url: "http://127.0.0.1/wangyikaola/server/dengluzhuce/login.php",
+            // dataType: "json",
+            data: `username=${nametxt}&password=${wordtxt}`,
+            success: function(response){
+
+            }
+        })
+    })
+
 })
