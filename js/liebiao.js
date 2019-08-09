@@ -161,7 +161,19 @@ $(function(){
         return `<div class="box">
                     <h3 class="title">新品直播</h3>
                     <div class="wares-nav"><ul></ul></div>
-                    <div class="warestak"></div>
+                    <div class="warestak">
+                        <div class="wares"></div>
+                        <div class="wares"></div>
+                        <div class="wares"></div>
+                        <div class="wares"></div>
+                        <div class="wares"></div>
+                        <div class="wares"></div>
+                        <div class="wares"></div>
+                        <div class="wares"></div>
+                        <div class="wares"></div>
+                        <div class="wares"></div>
+                        <div class="wares"></div>
+                    </div>
                 </div>
                 `
     }
@@ -217,16 +229,14 @@ $(function(){
             type: "post",
             url: "/wangyikaola/server/liebiao/weresget.php",
             dataType: "json",
-            success: function(response){
-                debugger;
-                let warestak = `<div class="wares"></div>`         
+            success: function(response){       
                 let warestext = response.data.map(ele =>{
                     return `<div class="wares-box">
                     <div class="wares-img">
                         <img src="${ele.img}" alt="" class="imga">
                         <img src="${ele.minimg}" alt="" class="imgb">
                      </div>
-                     <a href="" class="wares-txt">
+                     <a href="javascript:void(0)" class="wares-txt">
                          <h4>${ele.title}</h4>
                          <p>${ele.txt}</p>
                      </a>
@@ -237,18 +247,11 @@ $(function(){
                          ${ele.free ==""?"": `<span class='priced'>${ele.free}</span>`}
                          
                      </p>
-                     <a href="" class="buy">立即抢购</a>
+                     <a href="javascript:void(0)" class="buy">立即抢购</a>
                 </div>`
                 }).join("");
-                $(".warestak").append(warestak)
-                $(".wares").append(warestext)
-                $(".wares").eq(0).addClass("waresget")
-
-                $(".title-nav").click(function () { 
-                    $(".wares").removeClass("waresget");
-                    var res = $(this).index();
-                    $(".wares").eq(res).addClass("waresget");
-                });
+                $(".wares:eq(0)").append(warestext)
+                $(".wares:eq(0)").addClass("waresget");
             }
         })
     }
@@ -259,15 +262,14 @@ $(function(){
             type: "post",
             url: "/wangyikaola/server/liebiao/waresaget.php",
             dataType: "json",
-            success: function(response){
-                let warestak = `<div class="wares"></div>`         
+            success: function(response){        
                 let warestext = response.data.map(ele =>{
                     return `<div class="wares-box">
                     <div class="wares-img">
                         <img src="${ele.img}" alt="" class="imga">
                         <img src="${ele.minimg}" alt="" class="imgb">
                      </div>
-                     <a href="" class="wares-txt">
+                     <a href="javascript:void(0)" class="wares-txt">
                          <h4>${ele.title}</h4>
                          <p>${ele.txt}</p>
                      </a>
@@ -278,17 +280,54 @@ $(function(){
                          ${ele.free ==""?"": `<span class='priced'>${ele.free}</span>`}
                          
                      </p>
-                     <a href="" class="buy">立即抢购</a>
+                     <a href="javascript:void(0)" class="buy">立即抢购</a>
                 </div>`
                 }).join("");
-                $(".warestak").append(warestak)
-                $(".wares").append(warestext)
-                
+                $(".wares:eq(1)").append(warestext)
             }
         })
     }
     waresa()
-    
+
+    let waresb = () =>{
+        $.ajax({
+            type: "post",
+            url: "/wangyikaola/server/liebiao/waresbget.php",
+            dataType: "json",
+            success: function(response){        
+                let warestext = response.data.map(ele =>{
+                    return `<div class="wares-box">
+                    <div class="wares-img">
+                        <img src="${ele.img}" alt="" class="imga">
+                        <img src="${ele.minimg}" alt="" class="imgb">
+                     </div>
+                     <a href="javascript:void(0)" class="wares-txt">
+                         <h4>${ele.title}</h4>
+                         <p>${ele.txt}</p>
+                     </a>
+                     <p class="price">
+                         <span class="pricea">¥${ele.price}</span>
+                         <span class="priceb">¥${ele.del}</span>
+                         ${ele.discount ==""?"": `<span class='priced'>${ele.discount}</span>`}
+                         ${ele.free ==""?"": `<span class='priced'>${ele.free}</span>`}
+                         
+                     </p>
+                     <a href="javascript:void(0)" class="buy">立即抢购</a>
+                </div>`
+                }).join("");
+                $(".wares:eq(2)").append(warestext);
+                
+                $(".title-nav").click(function () { 
+                    $(".wares").removeClass("waresget");
+                    var res = $(this).index();
+                    console.log(res);
+                    
+                    $(".wares").eq(res).addClass("waresget");
+                });
+            }
+        })
+    }
+    waresb()
 
 
     //创建底部

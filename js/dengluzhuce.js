@@ -69,6 +69,7 @@ $(function(){
     });
 
     //密码验证
+    oPostword.password.type = "password";
     oPostword.blur(function (e) { 
         let text = $.trim($(this).val());
         wordtext = text;
@@ -129,48 +130,55 @@ $(function(){
 
 
     //登陆................................................
-    // let nametxt = "";
-    // let wordtxt = "";
+    
 
-    // let oLandname = $("#landname");
-    // oLandname.blur(function (e) { 
-    //     let text = $.trim($(this).val());
-    //     // nametxt = text;
-    //     if(text.length == 0){
-    //         $('.inputtxt').html("手机号不能为空!");
-    //     }else if(!regPhone.test(text)){
-    //         $('.inputtxt').html("手机号不符合规范!");
-    //     }else{
-    //         $('.inputtxt').html("");
-    //     }
-    // });
+    let oLandname = $("#landname");
+    oLandname.blur(function (e) { 
+        let text = $.trim($(this).val());
+        nametxt = text;
+        if(text.length == 0){
+            $('.inputtxt').html("手机号不能为空!");
+        }else if(!regPhone.test(text)){
+            $('.inputtxt').html("手机号不符合规范!");
+        }else{
+            $('.inputtxt').html("");
+        }
+    });
 
-    // let oLandword = $("#landword");
-    // oLandword.blur(function (e) { 
-    //     let text = $.trim($(this).val());
-    //     // wordtxt = text;
-    //     if(text.length == 0){
-    //         $('.inputtxt').html("密码不能为空!");
-    //     }else if(!regPassword.test(text)){
-    //         $('.inputtxt').html("密码不符合规范!");
-    //     }else{
-    //         $('.inputtxt').html("");
-    //     }
-    // });
+    let oLandword = $("#landword");
+    oLandword.blur(function (e) { 
+        let text = $.trim($(this).val());
+        wordtxt = text;
+        if(text.length == 0){
+            $('.inputtxt').html("密码不能为空!");
+        }else if(!regPassword.test(text)){
+            $('.inputtxt').html("密码不符合规范!");
+        }else{
+            $('.inputtxt').html("");
+        }
+    });
 
     //点击登陆
     $(".password-login-in").click(function(){
 
-        let nametxt = "13112031527";
-        let wordtxt = "123456";
-        
+        let nametxt = oLandname.val();
+        let wordtxt = oLandword.val();
+
         $.ajax({
             type: "post",
-            url: "http://127.0.0.1/wangyikaola/server/dengluzhuce/login.php",
-            // dataType: "json",
+            url: "/wangyikaola/server/dengluzhuce/login.php",
+            dataType: "json",
             data: `username=${nametxt}&password=${wordtxt}`,
             success: function(response){
 
+                if (response.status == "success") {
+                    alert(response.msg);
+
+                    window.location.href = "https://www.bilibili.com"
+                } else {
+                    alert(response.msg);
+                }   
+                
             }
         })
     })

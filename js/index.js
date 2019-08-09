@@ -108,7 +108,7 @@ $(function(){
                 let navbanner = response.map(ele => {
                     let navgla = "";
                     for(var i=0; i<ele.nav.length;i++){
-                        var navgl = `<li><a href="">${ele.nav[i]}</a></li>`
+                        var navgl = `<li><a href="javascript:void(0)">${ele.nav[i]}</a></li>`
                         navgla += navgl;
                     }
 

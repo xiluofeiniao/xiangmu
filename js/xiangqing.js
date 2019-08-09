@@ -156,8 +156,11 @@ $(function(){
     }
     navlt();
 
+    //详情页
+    
+
     //创建底部
-    let e = `<div class="pledge-nav"></div>`;
+    let e = `<div class="pledge"></div>`;
     $("#wykl").append(e);
     let pledge = () =>{
         $.ajax({
@@ -172,7 +175,7 @@ $(function(){
                                 </div>
                             </div>`
                 }
-                $(".pledge-nav").append(pledgebox);
+                $(".pledge").append(pledgebox);
 
                 let pledgetext = response.map(ele => {
                     return `<div class="Service-nav">
