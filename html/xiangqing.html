@@ -5,42 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/xiangqing.css">
-    <!-- <script src="../js/jquery-3.4.1.js"></script>
-    <script src="../js/xiangqing.js"></script> -->
+    <link rel="stylesheet" href="/wangyikaola/css/xiangqing.css">
+    <link rel="stylesheet" href="../css/magnifier.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/xiangqing.js"></script>
 </head>
 <body>
 
-    <div class="details">
+    <!-- <div class="details"> -->
         <div class="details-content">
             <div class="details-left">
-                <div class="details-img"></div>
-                <div class="details-img-list"></div>
+                    <div class="magnifier" id="magnifier1">
+                            <div class="magnifier-container">
+                                <div class="images-cover"></div>
+                                <!--当前图片显示容器-->
+                                <div class="move-view"></div>
+                                <!--跟随鼠标移动的盒子-->
+                            </div>
+                            <div class="magnifier-assembly">
+                                <div class="magnifier-btn">
+                                    <span class="magnifier-btn-left">&lt;</span>
+                                    <span class="magnifier-btn-right">&gt;</span>
+                                </div>
+                                <!--按钮组-->
+                                <div class="magnifier-line">
+                                    <ul class="clearfix animation03">
+                                        <li>
+                                            <div class="small-img">
+                                                <img src="http://haitao.nosdn2.127.net/23294123b390432b98b4736a36cb95271564389063432jyo4uupf10024.jpg?imageView&thumbnail=800x0&quality=85" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="small-img">
+                                                <img src="https://haitao.nosdn1.127.net/ad59c7f90d004099a3f00cd192e5a8611555398747279jujg96da10070.jpg?imageView&thumbnail=800x0&quality=85" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="small-img">
+                                                <img src="https://haitao.nosdn1.127.net/335c5e8cf2694b7095ff2a9499563a9a1555398747391jujg96gd10071.jpg?imageView&thumbnail=800x0&quality=85" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="small-img">
+                                                <img src="https://haitao.nos.netease.com/a6bc8a637129495d9bdb07283dfb7be01555398748174jujg972410072.jpg?imageView&thumbnail=800x0&quality=85" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="small-img">
+                                                <img src="https://haitao.nos.netease.com/f74bb04556464d598c04dffc0ba255021555398748258jujg974h10073.jpg?imageView&thumbnail=800x0&quality=85" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="small-img">
+                                                <img src="https://haitao.nosdn1.127.net/26a5a2a4670c417e8f296912c40287a21555398748392jujg978710074.jpg?imageView&thumbnail=800x0&quality=85" />
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="magnifier-view"></div>
+                        </div>
+                <!-- <div class="details-img">
+                    <img src="http://haitao.nosdn2.127.net/23294123b390432b98b4736a36cb95271564389063432jyo4uupf10024.jpg?imageView&thumbnail=800x0&quality=85" alt="">
+                </div>
+                <div class="details-img-list">
+                    <a href="javascript:void(0)">
+                        <img src="https://haitao.nosdn2.127.net/23294123b390432b98b4736a36cb95271564389063432jyo4uupf10024.jpg?imageView&thumbnail=64x0&quality=85" alt="">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="https://haitao.nosdn1.127.net/ad59c7f90d004099a3f00cd192e5a8611555398747279jujg96da10070.jpg?imageView&thumbnail=64x0&quality=85" alt="">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="https://haitao.nosdn1.127.net/335c5e8cf2694b7095ff2a9499563a9a1555398747391jujg96gd10071.jpg?imageView&thumbnail=64x0&quality=85" alt="">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="https://haitao.nos.netease.com/a6bc8a637129495d9bdb07283dfb7be01555398748174jujg972410072.jpg?imageView&thumbnail=64x0&quality=85" alt="">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="https://haitao.nos.netease.com/f74bb04556464d598c04dffc0ba255021555398748258jujg974h10073.jpg?imageView&thumbnail=64x0&quality=85" alt="">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="https://haitao.nosdn1.127.net/26a5a2a4670c417e8f296912c40287a21555398748392jujg978710074.jpg?imageView&thumbnail=64x0&quality=85" alt="">
+                    </a>
+                </div> -->
             </div>
             <div class="details-right">
-                <span class="right-top"></span>
+                <span class="right-top">
+                    <img src="https://haitao.nosdn2.127.net/1cc2m9est21_46_46.png?imageView&thumbnail=48x0&quality=85" alt="">
+                    <p>日本 | SHISEIDO 资生堂</p>
+                </span>
                 <h3 class="right-title">SHISEIDO 资生堂 UNO 男士洗面奶 黑炭控油/净透磨砂/润泽温和 130克</h3>
-                <p>黑炭清洁黑科技，一扫肌肤黑势力，控油保湿两不误！遇水后会产生细胍又丰富的泡沫,能够深入毛孔，有效告别附着在毛孔內的污垢，还原洁净美肌，甘油等成分具有吸水作用，恢复肌肤的张力令肌肤时刻水润~</p>
+                <p class="title-list">黑炭清洁黑科技，一扫肌肤黑势力，控油保湿两不误！遇水后会产生细胍又丰富的泡沫,能够深入毛孔，有效告别附着在毛孔內的污垢，还原洁净美肌，甘油等成分具有吸水作用，恢复肌肤的张力令肌肤时刻水润~</p>
                 <div class="right-pirce">
                     <div class="pirce-top">
                         <span class="topa">售价</span>
                         <span class="topb">¥35.00</span>
                         <span class="topc">特价</span>
-                        <span class="topd">参考价</span>
-                        <span class="tope">¥110.00</span>
+                        <span class="topd">参考价 ¥110.00</span>
                     </div>
                     <div class="pirce-content">
                         <img src="https://haitao.nosdn1.127.net/6dc03e40-5452-4a3e-a039-1ae8badbce2e_120_45.png?klsize=120x45&imageView&thumbnail=0x34&quality=90" alt="">
-                        <p>黑卡会员预计可</p>
-                        <p>省¥1.4</p>
-                        <p>含会员96折</p>
-                        <a href="">立即开卡</a>
+                        <p class="pc1">黑卡会员预计可省</p>
+                        <p class="pc2">¥1.4</p>
+                        <p class="pc3">含会员96折</p>
+                        <a href="javascript:void(0)" class="pc4">立即开卡</a>
                     </div>
-                    <div class="pirce-floor"></div>
+                    <div class="pirce-floor">
+                        <p class="pf1">先领每满200减25优惠券，再下单</p>
+                        <a href="javascript:void(0)" class="pf2">点击领取</a>
+                        <p class="pf3">全部4张优惠券 </p>
+                    </div>
+                    <div class="fa">
+                        <p class="fa-1">活动</p>
+                        <p class="fa-2">N元任选</p>
+                        <a href="javascript:void(0)" class="fa-3">99元任选3件</a>
+                        <a href="javascript:void(0)" class="fa-4">点击凑单></a>
+                    </div>
+                    <div class="fb">
+                        <p class="fb-1">税费</p>
+                        <p class="fb-2">包税</p>
+                        <p class="fb-3">售价已包含税费，无需另付税费</p>
+                    </div>
+                    <div class="buy">
+                        <a href="javascript:void(0)" class="buy-box">立即购买</a>
+                        <a href="javascript:void(0)" class="buy-shop">加入购物车</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
+
+    <script src="../js/tool/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/tool/magnifier.js"></script>
+    <script type="text/javascript">
+        var magnifierConfig = {
+            magnifier: "#magnifier1", 
+            width: 400, 
+            height: 400, //承载容器高
+            moveWidth: 70, //如果设置了移动盒子的宽度，则不计算缩放比例
+            zoom: 0 //缩放比例
+        };
+        var _magnifier = magnifier(magnifierConfig);
+</script>
     
 </body>
 </html>

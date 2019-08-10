@@ -157,6 +157,11 @@ $(function(){
     navlt();
 
     //详情页
+    let details = $("<div class='details'></div>");
+    $("#wykl").append(details);
+    let detailscontent = $(".details-content");
+    $(".details").append(detailscontent);
+    
     
 
     //创建底部

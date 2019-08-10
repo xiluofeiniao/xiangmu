@@ -1,5 +1,5 @@
 body{
-    background: #eee;
+    /* background: #eee; */
 }
 
 *{padding: 0; margin: 0; list-style: none; text-decoration: none;}
@@ -309,258 +309,308 @@ body{
 
 /* ............................................... */
 
-.box{
+.details{
     width: 100%;
     height: 100%;
 }
 
-.title{
-    width: 1090px;
-    height: 30px;
-    font-size: 28px;
-    font-weight: normal;
-    text-align: center;
-    line-height: 28px;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 15px;
-}
-
-.wares-nav{
-    width: 1100px;
-    height: 50px;
-    margin: auto;
-    background: #fff;
-    border-right: 1px solid #ccc;
-}
-
-.wares-nav li{
-    float: left;
-    width: 100px;
-    height: 50px;
-    border: 1px solid #ccc;
-    border-right: none;
-    box-sizing: border-box;
-    text-align: center;
-    padding-top: 5px;
-}
-
-.wares-nav li a{
-    font-size: 16px;
-    font-weight: bold;
-    color: #000;
-}
-
-.wares-nav span{
-    font-size: 12px;
-    float: left;
-    margin-left: 2px;
-}
-
-.wares-nav p{
-    margin-left: 20px;
-}
-
-.p2{
-    color: red;
-    font-weight: bold;
-}
-
-.wares{
-    width: 1090px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.wares-box{
-    width: 260px;
-    height: 400px;
-    background: #fff;
-    margin-top: 10px;
-    float: left;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-
-.wares-img{
-    width: 260px;
-    height: 260px;
-    float: left;
-    position: relative;
-    background: blue;
-}
-
-.imga{
-    width: 260px;
-    height: 260px;
-    position: absolute;
-}
-
-.imgb{
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
-
-.wares-txt{
-    color: #000;
-    float: left;
-    width: 260px;
-    height: 50px;
-}
-
-.wares-txt h4{
-    width: 240px;
-    font-size: 12px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-left: 10px;
-}
-
-.wares-txt p{
-    font-size: 12px;
-    margin-left: 10px;
-    margin-top: 5px;
-}
-
-.pricea{
-    font-size: 20px;
-    font-weight: bold;
-    color: red;
-    margin-left: 10px;
-    float: left;
-}
-
-.priceb{
-    text-decoration: line-through;
-    font-size: 12px;
-    color: #999;
-    margin-left: 5px;
-    float: left;
-    margin-top: 8px;
-}
-
-.pricec,
-.priced{
-    width: 35px;
-    height: 20px;
-    border: 1px solid red;
-    color: red;
-    font-size: 12px;
-    text-align: center;
-    line-height: 20px;
+.details::after{
+    content: "";
+    height: 0;
     display: block;
-    float: left;
-    margin-left: 5px;
-    margin-top: 3px;
+    overflow: hidden;
+    clear: both;
+    visibility: hidden;
 }
 
-.buy{
-    width: 230px;
-    height: 30px;
-    background: red;
-    color: #fff;
-    text-align: center;
-    line-height: 30px;
+.details-content{
+    width: 1090px;
+    height: 100%;
+    margin: auto;
+}
+
+.details-content::after{
+    content: "";
+    height: 0;
+    display: block;
+    overflow: hidden;
+    clear: both;
+    visibility: hidden;
+}
+
+.details-left{
+    width: 400px;
+    height: 490px;
+    float: left;
+    /* background: yellow; */
+}
+
+.details-img{
+    width: 400px;
+    height: 400px;
+    float: left;
+    border: 1px solid #ccc !important;
+}
+
+.details-img img{
+    width: 400px;
+    height: 400px;
+}
+
+.details-img-list{
+    width: 400px;
+    height: 70px;
+    /* background: yellow; */
+    float: left;
+    overflow-x: scroll;
+    margin-top: 10px;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+/* .details-img-list::-webkit-scrollbar {
+    display: none;
+} */
+
+.details-img-list a{
+    width: 64px;
+    height: 64px;
+    border: 1px solid #ccc !important;
+    margin-left: 10px;
+}
+
+.details-right{
+    width: 690px;
+    height: 780px;
+    /* background: gold; */
+    float: left;
+}
+
+.right-top{
+    width: 660px;
+    height: 26px;
+    float: left;
+    margin-left: 30px;
+}
+
+.right-top p{
+    font-size: 15px;
+    float: left;
+    line-height: 26px;
+}
+
+.right-top img{
+    width: 24px;
+    height: 24px;
+    float: left;
+}
+
+.right-title{
+    width: 660px;
+    float: left;
+    margin-left: 30px;
+}
+
+.title-list{
+    font-size: 13px;
+    width: 660px;
+    margin-left: 30px;
+    margin-top: 5px;
+    float: left;
+}
+
+.right-pirce{
+    width: 660px;
+    height: 125px;
+    background: #eee;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.pirce-top{
+    width: 660px;
+    height: 45px;
+    /* background: green; */
+}
+
+.topa{
+    font-size: 13px;
     float: left;
     margin-top: 20px;
     margin-left: 15px;
 }
 
-/* ............................................... */
-
-.recommend{
-    width: 1090px;
-    height: 445px;
-    margin: auto;
-    margin-top: 60px;
-}
-
-.nav-title{
-    width: 1090px;
-    height: 60px;
-    line-height: 60px;
-    float: left;
-}
-
-.nav-title h3{
+.topb{
     font-size: 25px;
+    font-weight: bold;
+    color: red;
     float: left;
-}
-
-.nav-title p{
-    float: left;
-    color: #666;
-    font-size: 13px;
-    margin-left: 10px;
-    margin-top: 5px;
-}
-
-.recommend-nav{
-    width: 1090px;
-    height: 385px;
-    float: left;
-    display: flex;
-    justify-content: space-between;
-}
-
-.recommend-text{
-    width: 260px;
-    height: 385px;
-}
-
-.text-img{
-    width: 260px;
-    height: 260px;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-}
-
-.text-img img{
-    width: 180px;
-    height: 180px;
-}
-
-.text-p{
-    width: 260px;
-    height: 125px;
-    float: left;
-    /* background: yellow; */
-}
-
-.text-p h4{
+    margin-left: 40px;
     margin-top: 10px;
 }
 
-.text-p .p1{
+.topc{
+    width: 40px;
+    height: 20px;
+    background: red;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 18px;
+    float: left;
+}
+
+.topd{
+    float: left;
+    font-size: 13px;
+    color: #999999;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.pirce-content{
+    width: 660px;
+    height: 50px;
+    float: left;
+    /* background: blue; */
+}
+
+.pirce-content img{
+    width: 45px;
+    height: 17px;
+    float: left;
+    margin-left: 65px;
+}
+
+.pc1{
+    font-size: 13px;
+    float: left;
+}
+
+.pc2{
+    font-size: 13px;
+    color: red;
+    float: left;
+    width: 400px;
+}
+
+.pc3{
+    font-size: 13px;
+    float: left;
+    margin-top: 3px;
+}
+
+.pc4{
+    float: left;
+    font-size: 13px;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.pirce-floor{
+    width: 660px;
+    height: 30px;
+    /* background: yellow; */
+    float: left;
+}
+
+.pf1{
+    font-size: 13px;
+    float: left;
+    margin-left: 65px;
+}
+
+.pf2{
+    font-size: 13px;
+    float: left;
+    margin-left: 10px;
+}
+
+.pf3{
+    font-size: 13px;
+    float: right;
+    margin-right: 15px;
+}
+
+.fa{
+    width: 660px;
+    height: 30px;
+    /* background: greenyellow; */
+    float: left;
+    margin-top: 15px;
+}
+
+.fa-1,
+.fb-1{
+    font-size: 13px;
+    float: left;
+    margin-left: 15px;
+}
+
+.fa-2,
+.fb-2{
+    width: 60px;
+    height: 20px;
+    background: red;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    float: left;
+    font-size: 13px;
+    margin-left: 40px;
+}
+
+.fa-3,
+.fa-4,
+.fb-3{
+    font-size: 13px;
+    color: red;
+    float: left;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.buy{
+    width: 660px;
+    height: 80px;
+    /* background: blueviolet; */
+    float: left;
+    margin-top: 20px;
+}
+
+.buy-box{
+    width: 150px;
+    height: 50px;
+    background: rgba(255, 0, 0, 0.1);
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    border: 3px solid red;
     font-size: 20px;
     font-weight: bold;
     color: red;
     float: left;
-    margin-top: 5px;
+    box-sizing: border-box
 }
 
-.text-p .p2{
-    font-size: 12px;
+.buy-shop{
+    width: 150px;
+    height: 50px;
+    background: red;
+    display: block;
+    text-align: center;
+    line-height: 50px;
     float: left;
-    color: #999;
-    margin-top: 12px;
-    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 20px;
 }
 
-.text-p a{
-    font-size: 13px;
-    color: #999;
-    float: right;
-    margin-top: 12px;
-}
-
-/* ........................................... */
+/* ................................................ */
 
 .pledge{
     width: 100%;

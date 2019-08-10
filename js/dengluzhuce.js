@@ -69,7 +69,6 @@ $(function(){
     });
 
     //密码验证
-    oPostword.password.type = "password";
     oPostword.blur(function (e) { 
         let text = $.trim($(this).val());
         wordtext = text;
@@ -174,7 +173,7 @@ $(function(){
                 if (response.status == "success") {
                     alert(response.msg);
 
-                    window.location.href = "https://www.bilibili.com"
+                    window.location.href = "http://127.0.0.1/wangyikaola/wangyikaola.html"
                 } else {
                     alert(response.msg);
                 }   

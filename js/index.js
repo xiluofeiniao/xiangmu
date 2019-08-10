@@ -12,8 +12,8 @@ $(function(){
             <div class="top-nav-content">
                 <div class="top-nav-left">
                     <span>网易考拉欢迎您！</span>
-                    <a href="" class="login">登陆</a>
-                    <a href="" class="post">免费注册</a>
+                    <a href="http://127.0.0.1/wangyikaola/html/dengluzhuce.html" class="login">登陆</a>
+                    <a href="http://127.0.0.1/wangyikaola/html/dengluzhuce.html" class="post">免费注册</a>
                 </div>
                 <div class="top-nav-right">
                     <ul class="nav-right-ul">
