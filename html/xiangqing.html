@@ -15,55 +15,28 @@
     <!-- <div class="details"> -->
         <div class="details-content">
             <div class="details-left">
-                    <div class="magnifier" id="magnifier1">
-                            <div class="magnifier-container">
-                                <div class="images-cover"></div>
-                                <!--当前图片显示容器-->
-                                <div class="move-view"></div>
-                                <!--跟随鼠标移动的盒子-->
-                            </div>
-                            <div class="magnifier-assembly">
-                                <div class="magnifier-btn">
-                                    <span class="magnifier-btn-left">&lt;</span>
-                                    <span class="magnifier-btn-right">&gt;</span>
-                                </div>
-                                <!--按钮组-->
-                                <div class="magnifier-line">
-                                    <ul class="clearfix animation03">
-                                        <li>
-                                            <div class="small-img">
-                                                <img src="http://haitao.nosdn2.127.net/23294123b390432b98b4736a36cb95271564389063432jyo4uupf10024.jpg?imageView&thumbnail=800x0&quality=85" />
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="small-img">
-                                                <img src="https://haitao.nosdn1.127.net/ad59c7f90d004099a3f00cd192e5a8611555398747279jujg96da10070.jpg?imageView&thumbnail=800x0&quality=85" />
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="small-img">
-                                                <img src="https://haitao.nosdn1.127.net/335c5e8cf2694b7095ff2a9499563a9a1555398747391jujg96gd10071.jpg?imageView&thumbnail=800x0&quality=85" />
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="small-img">
-                                                <img src="https://haitao.nos.netease.com/a6bc8a637129495d9bdb07283dfb7be01555398748174jujg972410072.jpg?imageView&thumbnail=800x0&quality=85" />
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="small-img">
-                                                <img src="https://haitao.nos.netease.com/f74bb04556464d598c04dffc0ba255021555398748258jujg974h10073.jpg?imageView&thumbnail=800x0&quality=85" />
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="small-img">
-                                                <img src="https://haitao.nosdn1.127.net/26a5a2a4670c417e8f296912c40287a21555398748392jujg978710074.jpg?imageView&thumbnail=800x0&quality=85" />
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
+                <div class="magnifier" id="magnifier1">
+                    <div class="magnifier-container">
+                        <div class="images-cover">
+                            <img src="" alt="">
+                        </div>
+                        <div class="move-view"></div>
+                    </div>
+                    <div class="magnifier-assembly">
+                        <div class="magnifier-btn">
+                            <span class="magnifier-btn-left">&lt;</span>
+                            <span class="magnifier-btn-right">&gt;</span>
+                        </div>
+                        <div class="magnifier-line">
+                            <ul class="clearfix animation03">
+                                <li>
+                                    <div class="small-img">
+                                        <img src="" alt=""/>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
                             <div class="magnifier-view"></div>
                         </div>
                 <!-- <div class="details-img">
@@ -142,12 +115,12 @@
         var magnifierConfig = {
             magnifier: "#magnifier1", 
             width: 400, 
-            height: 400, //承载容器高
-            moveWidth: 70, //如果设置了移动盒子的宽度，则不计算缩放比例
-            zoom: 0 //缩放比例
+            height: 400, 
+            moveWidth: 70, 
+            zoom: 0 
         };
-        var _magnifier = magnifier(magnifierConfig);
-</script>
+        let _magnifier = magnifier(magnifierConfig);
+    </script>
     
 </body>
 </html>

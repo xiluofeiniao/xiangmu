@@ -67,6 +67,7 @@ $(function(){
                         <a href="" class="shopping">
                             <img src="../img/shoppingcar.png" alt="">
                             <span>购物车</span>
+                            <span class="shopnum"></span>
                         </a>
                     </div>
                 </div>`
@@ -229,9 +230,10 @@ $(function(){
             type: "post",
             url: "/wangyikaola/server/liebiao/weresget.php",
             dataType: "json",
-            success: function(response){       
+            success: function(response){
+                      
                 let warestext = response.data.map(ele =>{
-                    return `<div class="wares-box">
+                    return `<div class="wares-box" id="${ele.gid}">
                     <div class="wares-img">
                         <img src="${ele.img}" alt="" class="imga">
                         <img src="${ele.minimg}" alt="" class="imgb">
@@ -254,8 +256,18 @@ $(function(){
                 $(".wares:eq(0)").addClass("waresget");
             }
         })
+
+        
+        
+
+        $(".wares").on("click",".wares-box",function(){
+          
+            window.open(`http://127.0.0.1/wangyikaola/html/xiangqing.html?gid=${ $(this)[0].id}`)
+        })
     }
     wares()
+    
+        
 
     let waresa = () =>{
         $.ajax({
@@ -406,29 +418,6 @@ $(function(){
     </div>`
     }
     $("#wykl").append(foot)
-
-
-    $(".wares").on("click",function(){
-
-            let passid =123
-        window.open(`http://127.0.0.1/wangyikaola/html/xiangqing.html?passid=${passid}`)
-
-
-
-location.search
-
-
-    })
-
-
-
-
-
-
-
-
-
-
 
 
 })

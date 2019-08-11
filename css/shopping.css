@@ -305,12 +305,13 @@
 
 /* ............................................... */
 
-.details{
+
+.shopping-box{
     width: 100%;
     height: 100%;
 }
 
-.details::after{
+.shopping-box:after{
     content: "";
     height: 0;
     display: block;
@@ -319,292 +320,180 @@
     visibility: hidden;
 }
 
-.details-content{
+.shopping-content{
     width: 1090px;
     height: 100%;
     margin: auto;
 }
 
-.details-content::after{
-    content: "";
-    height: 0;
-    display: block;
-    overflow: hidden;
-    clear: both;
-    visibility: hidden;
-}
-
-.details-left{
-    width: 400px;
-    height: 490px;
-    float: left;
+.shop-title{
+    width: 1090px;
+    height: 30px;
     /* background: yellow; */
-}
-
-.details-img{
-    width: 400px;
-    height: 400px;
+    border: 1px solid #ccc;
     float: left;
-    border: 1px solid #ccc !important;
+    margin-top: 50px;
 }
 
-.details-img img{
-    width: 400px;
-    height: 400px;
-}
-
-.details-img-list{
-    width: 400px;
-    height: 70px;
-    /* background: yellow; */
+.shop-title ul li{
     float: left;
-    overflow-x: scroll;
-    margin-top: 10px;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-/* .details-img-list::-webkit-scrollbar {
-    display: none;
-} */
-
-.details-img-list a{
-    width: 64px;
-    height: 64px;
-    border: 1px solid #ccc !important;
-    margin-left: 10px;
-}
-
-.details-right{
-    width: 690px;
-    height: 780px;
-    /* background: gold; */
-    float: left;
-}
-
-.right-top{
-    width: 660px;
-    height: 26px;
-    float: left;
-    margin-left: 30px;
-}
-
-.right-top p{
     font-size: 15px;
-    float: left;
-    line-height: 26px;
+    line-height: 30px;
 }
 
-.right-top img{
-    width: 24px;
-    height: 24px;
-    float: left;
-}
-
-.right-title{
-    width: 660px;
-    float: left;
-    margin-left: 30px;
-}
-
-.title-list{
-    font-size: 13px;
-    width: 660px;
-    margin-left: 30px;
-    margin-top: 5px;
+.xuan{
+    width: 150px;
+    height: 30px;
     float: left;
 }
 
-.right-pirce{
-    width: 660px;
-    height: 125px;
-    background: #eee;
+.xuan input,
+.xuan p{
     float: left;
-    margin-left: 30px;
-    margin-top: 10px;
 }
 
-.pirce-top{
-    width: 660px;
-    height: 45px;
-    /* background: green; */
+.xuan input{
+    margin-top: 8px;
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
 }
 
-.topa{
-    font-size: 13px;
+.xuan p{
+    margin-left: 5px;
+}
+
+.shang{
+    width: 440px;
+    height: 30px;
+    float: left;
+}
+
+.jia,
+.shu,
+.jin,
+.caozuo{
+    width: 125px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    /* background: red; */
+}
+
+.shop-nav{
+    width: 1090px;
+    height: 120px;
+    float: left;
+    /* background: greenyellow; */
+}
+
+.fang{
+    width: 150px;
+    height: 120px;
+    float: left;
+}
+
+.fang input{
+    width: 15px;
+    height: 15px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.shop-text{
+    width: 440px;
+    height: 120px;
+    float: left;
+    /* background: red; */
+}
+
+.shop-text dt{
+    width: 120px;
+    height: 120px;
+    padding-left: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    float: left;
+    /* background: yellow; */
+}
+
+.shop-text dt img{
+    width: 100%;
+    height: 100%;
+}
+
+.shop-text dd{
+    width: 300px;
+    height: 80px;
     float: left;
     margin-top: 20px;
-    margin-left: 15px;
+    font-size: 15px;
 }
 
-.topb{
-    font-size: 25px;
-    font-weight: bold;
-    color: red;
+.shop-price,
+.money,
+.do{
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
     float: left;
-    margin-left: 40px;
-    margin-top: 10px;
+    color: #000;
 }
 
-.topc{
+.buy-num{
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+
+.num-box{
+    float: left;
+    width: 94px;
+    height: 25px;
+    box-sizing: border-box;
+    margin-top: 45px;
+    margin-left: 18px;
+}
+
+.btna{
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+
+.btnb{
+    width: 25px;
+    height: 25px;
+    float: right;
+}
+
+.shu-box{
+    text-align: center;
+}
+
+.shu-box{
     width: 40px;
     height: 20px;
-    background: red;
-    font-size: 12px;
-    text-align: center;
-    line-height: 20px;
-    color: #fff;
-    margin-left: 10px;
-    margin-top: 18px;
     float: left;
 }
 
-.topd{
+.buy-footer{
+    width: 1090px;
+    height: 30px;
+    line-height: 30px;
     float: left;
-    font-size: 13px;
-    color: #999999;
-    margin-left: 20px;
+    border: 1px solid #ccc;
     margin-top: 20px;
 }
 
-.pirce-content{
-    width: 660px;
-    height: 50px;
-    float: left;
-    /* background: blue; */
-}
-
-.pirce-content img{
-    width: 45px;
-    height: 17px;
-    float: left;
-    margin-left: 65px;
-}
-
-.pc1{
-    font-size: 13px;
-    float: left;
-}
-
-.pc2{
-    font-size: 13px;
-    color: red;
-    float: left;
-    width: 400px;
-}
-
-.pc3{
-    font-size: 13px;
-    float: left;
-    margin-top: 3px;
-}
-
-.pc4{
-    float: left;
-    font-size: 13px;
-    margin-left: 3px;
-    margin-top: 3px;
-}
-
-.pirce-floor{
-    width: 660px;
-    height: 30px;
-    /* background: yellow; */
-    float: left;
-}
-
-.pf1{
-    font-size: 13px;
-    float: left;
-    margin-left: 65px;
-}
-
-.pf2{
-    font-size: 13px;
-    float: left;
-    margin-left: 10px;
-}
-
-.pf3{
-    font-size: 13px;
+.buymoney{
     float: right;
-    margin-right: 15px;
-}
-
-.fa{
-    width: 660px;
+    width: 200px;
     height: 30px;
-    /* background: greenyellow; */
-    float: left;
-    margin-top: 15px;
+    text-align: center
 }
 
-.fa-1,
-.fb-1{
-    font-size: 13px;
-    float: left;
-    margin-left: 15px;
-}
-
-.fa-2,
-.fb-2{
-    width: 60px;
-    height: 20px;
-    background: red;
-    text-align: center;
-    line-height: 20px;
-    color: #fff;
-    float: left;
-    font-size: 13px;
-    margin-left: 40px;
-}
-
-.fa-3,
-.fa-4,
-.fb-3{
-    font-size: 13px;
-    color: red;
-    float: left;
-    line-height: 20px;
-    margin-left: 10px;
-}
-
-.buy{
-    width: 660px;
-    height: 80px;
-    /* background: blueviolet; */
-    float: left;
-    margin-top: 20px;
-}
-
-.buy-box{
-    width: 150px;
-    height: 50px;
-    background: rgba(255, 0, 0, 0.1);
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    border: 3px solid red;
-    font-size: 20px;
-    font-weight: bold;
-    color: red;
-    float: left;
-    box-sizing: border-box
-}
-
-.buy-shop{
-    width: 150px;
-    height: 50px;
-    background: red;
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    float: left;
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-    margin-left: 20px;
-}
 
 /* ................................................ */
 
@@ -751,4 +640,4 @@
     height: 30px;
     margin-top: 10px;
     margin-right: 10px;
-}
+}   

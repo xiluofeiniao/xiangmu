@@ -47,6 +47,7 @@ img{
 }
 .images-cover img{
 	position: absolute;
+	margin-left: -177px !important;
 }
 .magnifier-assembly{
 	height: 92px;

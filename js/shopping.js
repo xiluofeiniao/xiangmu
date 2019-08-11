@@ -72,143 +72,106 @@ $("body").append(wykl);
     }
     $("#wykl").append(logo);
 
-//创建中间导航部分
-    let nav = function(){
-        return `<div class="nav">
-                    <div class="nav-center">
-                        <div class="nav-left">
-                            <p class="nav-list">所有分类</p>
-                            <ul class="nav-box"></ul>
-                        </div>
-                        <ul class="nav-right"></ul>
+
+//购物车商品列表
+let oshopping = $("<div class='shopping-box'></div>");
+$("#wykl").append(oshopping);
+let shopcon = $(".shopping-content")
+$(".shopping-box").append(shopcon);
+
+var targetData;
+
+shopnav();
+function shopnav(){
+
+    $.ajax({
+        type: "get",
+        url: "http://127.0.0.1/wangyikaola/server/shopping/shopping.php",
+        dataType: "json",
+        success: function(data){
+            targetData = data;
+            let res = data.map(function(ele){
+                let shoptxt = `<div class="shop-nav" id="${ele.gid}">
+                <div class="fang">
+                    <input class="shopcheck" type="checkbox" ${ele.isactive==1 ? "checked" : ""}>
+                </div>
+                <dl class="shop-text">
+                    <dt>
+                        <img src="${ele.img}" alt="">
+                    </dt>
+                    <dd>${ele.title}</dd>
+                </dl>
+                <div class="shop-price">￥${ele.price}</div>
+                <div class="buy-num">
+                    <div class="num-box">
+                        <button class="btna">-</button>
+                        <input type="text" class="shu-box" value=${ele.num}>
+                        <button class="btnb">+</button>
                     </div>
-                </div>`
-    }
-    $("#wykl").append(nav)
-
-    let navcontent = () =>{
-        $.ajax({
-            type: "post",
-            url: "/wangyikaola/server/index/nav.php",
-            dataType: "json",
-            success: function(response){
-                let navbanner = response.map(ele => {
-                    let navgla = "";
-                    for(var i=0; i<ele.nav.length;i++){
-                        var navgl = `<li><a href="">${ele.nav[i]}</a></li>`
-                        navgla += navgl;
-                    }
-
-                    return navgla
-                }).join("")
-
-                $(".nav-right").append(navbanner)
-            }
-        })
-    }
-    navcontent();
-
-    let navlt = () =>{
-        $.ajax({
-            type: "post",
-            url: "/wangyikaola/server/index/nava.php",
-            dataType: "json",
-            success: function(response){
-                let navleft = response.map((ele)=>{
-                    let navh3 = "";
-                    let srcimg ="";
-                    for(let i = 0; i<ele.navtext.length; i++){
-                        let txt = "";
-                        for(let e = 0; e<ele.navtext[i].text.length; e++){
-                            let navtxt = `<li>${ele.navtext[i].text[e]}</li>`
-                            txt += navtxt;
-                        }
-                        
-                        let htxt = `<div class="leftTxt">
-                                        <h3>${ele.navtext[i].h3}</h3>
-                                        <ul>${txt}</ul>
-                                    </div>`;
-                        navh3 += htxt;
-                    }
-
-                    for(let i = 0; i<ele.srca.length; i++){
-                        let navimg = `<div class="right-img"><img src="${ele.srca[i]}" alt=""></div>`
-                        srcimg +=navimg
-                    }
-                    
-                    return `<li class="nav-list-text">
-                                <a href="" class="list-text">${ele.navlt}</a>
-                                <div class="nav-nav">
-                                    <div class="nav-nav-left">
-                                        ${navh3}
-                                    </div>
-                                    <div class="nav-nav-right">
-                                        ${srcimg}
-                                        <div class="right-imga"><img src="${ele.srcb}" alt=""></div>
-                                    </div>
-                                </div>
-                            </li>`
-                }).join("");
-                $(".nav-box").append(navleft);      
-            }
-        })
-    }
-    navlt();
-
-//详情页
-    let details = $("<div class='details'></div>");
-    $("#wykl").append(details);
-    let detailscontent = $(".details-content");
-    $(".details").append(detailscontent);
-
-    let gid =Number((location.search).split("?")[1].split("=")[1]);
-
-    let tim = function(){
-           
-       $.ajax({
-            type: "post",
-            url: "http://127.0.0.1/wangyikaola/server/liebiao/liebiaoa.php",
-            dataType: "json",
-            data:`gid=${gid}`,
-            success:function(ele){
-                let text = ele.data[0];
-                $(".right-title").html(text.title);
-                $(".topb").html(`￥${text.price}`);
-                $(".topd").html(`￥${text.del}`);
-                $(".magnifier-view img")[0].src = text.img;
-                $(".images-cover img")[0].src = text.img;
-                $(".small-img img")[0].src = text.img;
-                $(".right-title").attr("id", text.gid)
-             }
-        })
-    }
-    tim()
-    
-//给立即添加商品到购物车点击事件
-    $(".buy-shop").click(function(){
-        let index = $(".right-title")[0].id;
-        let price = $(".topb").text().split("￥")[1]
-
-        $.ajax({
-            type: "get",
-            url: "/wangyikaola/server/shopping/shoppingserver.php",
-            dataType: "json",
-            data: `gid=${index}&price=${price}`,
-            success: function(response){
-                
-                let textnum = response["totalRow"];
-                $(".shopnum").html(textnum);
-            }
-        })
+                </div>
+                <div class="money">￥${ele.money}</div>
+                <a href="javascript:void(0)" class="do">删除</a>
+            </div>`
+            return shoptxt;
+            }).join("");
+            $(".shoppingbox").append(res);
+            buymoneyall();
+        }
     })
+}
 
-//给购物车添加点击事件
-    $(".shopping").click(function(){
-        window.open("http://127.0.0.1/wangyikaola/html/shopping.html");
-    })
+
+//创建总价
+function buymoneyall() {
+
+    var rese = 0;
+    // debugger;
+    targetData.forEach(element => {
+        if (element.isactive == 1) {
+            rese += element.money * 1;
+        }
+    });
     
+    $(".buymoney").html("总计：" + rese);
+}
 
-    //创建底部
+//全选点击事件
+$("#allshop").click(function() {
+    $(".shopcheck").prop("checked", $(this).is(":checked"))
+})
+
+
+//点击勾选改变总价
+$(".shoppingbox").on("click", ".shopcheck", function() {
+    var gid = $(this).parents(".shop-nav")[0].id
+    
+    var isactive = $(this).is(":checked");
+    $.ajax({
+        type: "get",
+        url: "http://127.0.0.1/wangyikaola/server/shopping/shopbox.php",
+        data: `gid=${gid}&isactive=${isactive}`,
+        dataType: "dataType",
+        success: function(response) {
+            shopnav();
+        }
+    });
+})
+
+//删除点击事件
+$(".shoppingbox").on("click", ".do", function() {
+    var gid = $(this).parents(".shop-nav")[0].id
+    $.ajax({
+        type: "get",
+        url: "http://127.0.0.1/wangyikaola/server/shopping/removeshop.php",
+        data: "gid=" + gid,
+        success: function(response) {
+        }
+    });
+})
+
+
+
+//创建底部
     let e = `<div class="pledge"></div>`;
     $("#wykl").append(e);
     let pledge = () =>{
