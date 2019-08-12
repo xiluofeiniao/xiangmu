@@ -84,12 +84,12 @@ $(function(){
                                 <a href="javascript:void(false)" class="next">&gt;</a>
                             </p>
                             <div class="banner-round">
-                                <a href="" class="round"></a>
-                                <a href="" class="round"></a>
-                                <a href="" class="round"></a>
-                                <a href="" class="round"></a>
-                                <a href="" class="round"></a>
-                                <a href="" class="round"></a>
+                                <a href="javascript:void(0)" class="round active"></a>
+                                <a href="javascript:void(0)" class="round"></a>
+                                <a href="javascript:void(0)" class="round"></a>
+                                <a href="javascript:void(0)" class="round"></a>
+                                <a href="javascript:void(0)" class="round"></a>
+                                <a href="javascript:void(0)" class="round"></a>
                             </div>
                             <ul class="nav-box"></ul>
                         </div>
@@ -358,7 +358,7 @@ $(function(){
                     }
                     
                     
-                    return `<div class="hot">
+                    return `<div class="hot" id="${ele.id}">
                                 <div class="hot-nav">
                                     <h3>${ele.title}</h3>
                                     <ul>${hotnav}</ul>

@@ -12,13 +12,29 @@ body{
 
 .leftbox{
     width: 100px;
-    height: 400px;
-    background: #cccfff;
+    height: 410px;
+    background: #eeefff;
+    border: 1px solid #ccc;
+    text-align: center;
     position: fixed;
-    top: 100px;
+    top: 150px;
     left: 20px;
     z-index: 9999;
 }
+
+.leftbox h4{
+    width: 100px;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    line-height: 40px;
+}
+
+.leftbox a{
+    font-size: 13px;
+    line-height: 20px;
+    color: #999;
+}
+
 
 
 .top-nav{
@@ -102,7 +118,7 @@ body{
     background: #fff;
     position: sticky;
     top: 0;
-    z-index: 99999;
+    z-index: 10999;
 }
 
 .logo-center{
@@ -386,6 +402,10 @@ body{
     display: block;
     float: left;
     margin-right: 15px;
+}
+
+.active{
+    background: red;
 }
 
 .banner-text{

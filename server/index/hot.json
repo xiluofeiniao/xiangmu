@@ -1,5 +1,6 @@
 [{
     "title": "美妆专区",
+    "id": "1",
     "titlenav": ["热搜词：","面膜","口红","眼霜","精华","卸妆"],
     "hotimg": "https://haitao.nosdn1.127.net/1FtzCbxfT2yHbhCqfORvT1811261546_330_542.jpg?imageView&thumbnail=330x0&quality=95",
     "imgnav": ["精致护肤","人气面膜","大牌彩妆","防晒修护","迷人香氛","面部精华"],
@@ -45,6 +46,7 @@
     "hotbrand": ["https://haitao.nosdn2.127.net/1bk8ndmup45_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/1btbadu1946_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/ifxc1wa478_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn2.127.net/1c126l96j31_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn2.127.net/1btlvtbrr35_300_300.jpg?imageView&thumbnail=120x0&quality=95"]
 },{
     "title": "母婴专区",
+    "id": "2",
     "titlenav": ["热搜词：","花王旗舰","家居出行","米粉","宝宝防晒"],
     "hotimg": "https://haitao.nosdn1.127.net/PqSa1JgeRiGhlQcpKNu7T1811261632_330_542.jpg?imageView&thumbnail=330x0&quality=95",
     "imgnav": ["大牌奶粉","纸尿裤","洗护喂养","营养辅食","孕妈专区","玩具图书"],
@@ -90,6 +92,7 @@
     "hotbrand": ["https://haitao.nosdn1.127.net/iqt7jad642_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/iey1eyns76_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn2.127.net/iiq194c491_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/1buq5o77461_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/j1ls2t8t6_300_300.jpg?imageView&thumbnail=120x0&quality=95"]
 },{
     "title": "营养保健",
+    "id": "3",
     "titlenav": ["热搜词：","女性健康","男士必备","关爱爸妈","滋补养生","运动营养","日常护理"],
     "hotimg": "https://haitao.nos.netease.com/TzXuaov9A40ftQc1OX3uTxCgnLT1811261627_330_542.jpg?imageView&thumbnail=330x0&quality=95",
     "imgnav": ["女性健康","男士必备","关爱爸妈","滋补养生","运动营养","日常护理"],
@@ -133,6 +136,52 @@
         "costprice": "¥319"
     }],
     "hotbrand": ["https://haitao.nos.netease.com/ifpbik8q40_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/1bflhppm867_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn2.127.net/igxezzf398_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nos.netease.com/1dd08c1oj51_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn2.127.net/1bidsesq59_300_300.jpg?imageView&thumbnail=120x0&quality=95"]
+},{
+    "title": "数码家电",
+    "id": "4",
+    "titlenav": ["热搜词：","电动牙刷","耳机","钢笔","手机","吹风机","剃须刀","电脑","任天堂"],
+    "hotimg": "https://haitao.nos.netease.com/w9QMIELQZvS6g0t6AStTT1811261533_330_542.png?imageView&thumbnail=330x0&quality=95",
+    "imgnav": ["爆款手机","个护电器","生活电器","厨房电器","智能影音","电脑办公"],
+    "center": [{
+        "h3": "实时热销榜",
+        "cp": "热门推荐一网打尽",
+        "imgcenter": "https://haitao.nosdn2.127.net/eBq9ZMfBLxlqWeXzXaNPT1811261628_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    },{
+        "h3": "潮流新品榜",
+        "cp": "第一时间用上流行款",
+        "imgcenter": "https://haitao.nosdn1.127.net/8uynAnnbJDS8udPWVLoST1811261637_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    },{
+        "h3": "历届IF奖大赏",
+        "cp": "用心种草 为你精选",
+        "imgcenter": "https://haitao.nosdn2.127.net/i7RuQuVMaI31L2PHIFT1811261711_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    },{
+        "h3": "历届红点奖大赏",
+        "cp": "以创新 致匠心",
+        "imgcenter": "https://haitao.nos.netease.com/r3lL3nMGDlhcS3CN1UmHT1811261702_180_144.jpg?imageView&thumbnail=180x0&quality=95"
+    }],
+    "leftnav": "最近热卖",
+    "left": [{
+        "ltimg": "https://haitao.nosdn2.127.net/onlineigirwxwb12903.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "LAMY 凌美 safari 狩猎者 F尖钢笔 磨砂黑",
+        "hotprice": "¥99",
+        "costprice": "¥196"
+    },{
+        "ltimg": "https://haitao.nos-hz.163yun.com/c0312b41-05b6-4c06-8a40-f4e126e25785.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "Swisse 钙&VD片 150片/罐 2罐【有效促吸收 补钙方程式】",
+        "hotprice": "¥164",
+        "costprice": "¥378"
+    },{
+        "ltimg": "http://haitao.nosdn1.127.net/6b8d3ab770ce4ae9bcde7cf78cd96fed1534418669966jkwh9ax810543.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "Swisse 葡萄籽片 180片/瓶 高浓度原花青素【嫩白淡斑去皱】",
+        "hotprice": "¥125",
+        "costprice": "¥278"
+    },{
+        "ltimg": "https://haitao.nosdn1.127.net/2b2aa2978c814d85b2c25abb52f06cc41559704485462jwins32010464.jpg?imageView&thumbnail=75x0&quality=95",
+        "ltp": "Swisse 高浓度蔓越莓 30粒/瓶 2瓶【泌尿健康 保卫助手】",
+        "hotprice": "¥142",
+        "costprice": "¥319"
+    }],
+    "hotbrand": ["https://haitao.nosdn1.127.net/ij6sqzus49_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/igkhpcnl51_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn1.127.net/iewvqqyz80_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nosdn2.127.net/1c1ukskbg32_300_300.jpg?imageView&thumbnail=120x0&quality=95","https://haitao.nos.netease.com/igk933qy46_300_300.jpg?imageView&thumbnail=120x0&quality=95"]
 }]
 
 

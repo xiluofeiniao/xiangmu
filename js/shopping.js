@@ -165,6 +165,8 @@ $(".shoppingbox").on("click", ".do", function() {
         url: "http://127.0.0.1/wangyikaola/server/shopping/removeshop.php",
         data: "gid=" + gid,
         success: function(response) {
+           console.log(response);
+           
         }
     });
 })
